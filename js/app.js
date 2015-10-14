@@ -56,11 +56,9 @@ function animateLogo() {
 
 function animateRobot() {
     var t = new TimelineMax({repeat: -1});
-    t.to("#android-robot",0.3,{rotation: "-30deg"})
-        .to("#android-robot",0.3,{rotation: "-45deg"})
-        .to("#android-robot",0.3,{rotation: "-60deg"})
-        .to("#android-robot",0.3,{rotation: "-45deg"});
-
+    t.to("#android-robot",0.3,{rotation: "-=10deg"})
+        .to("#android-robot",0.6,{rotation: "+=20deg"})
+        .to("#android-robot",0.3,{rotation: "-=10deg"});
 }
 
 function scrollToElement(element) {
