@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attributes example</title>
+    <script type="text/javascript">
+        function showAttributes() {
+            var paragraph = document.getElementById("paragraph");
+            var result = document.getElementById("result");
+
+            var attrs = paragraph.attributes;
+            var output = '';
+            for (var i = attrs.length - 1; i >= 0; i--) {
+                output += attrs[i].name + "->" + attrs[i].value;
+            }
+            result.value = output
+        }
+    </script>
+</head>
+<body>
+
+</body>
+
+<p id="paragraph" style="color: green;">Sample Paragraph</p>
+
+<form action="">
+    <p>
+        <input type="button" value="Show first attribute name and value"
+               onclick="showAttributes();">
+        <input id="result" type="text" value="" style="height: 50%">
+    </p>
+</form>
+
+<script type="text/javascript">
+//    var req = new XMLHttpRequest();
+//    req.addEventListener('load', processResponse);
+//    req.open('GET', "http://www.baicaosoft.com/index.html");
+//    req.send();
+//
+//
+//    function processResponse() {
+//        console.log(this.responseText);
+//    }
+    console.log(1);
+    id = setInterval("console.log(2)", 1000);
+    console.log(3);
+    console.log("id:", id);
+
+</script>
+
+
+</html>
